@@ -83,3 +83,138 @@ body {
     width: 12.3rem;
     height: 3.2rem;
 }
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main {
+    background-image: url(../images/main.png);
+    background-size: cover;
+    background-position-x: center;
+    position: relative;
+    padding-bottom: 187px;
+    &__item {
+        margin-left: 12rem;
+        max-width: 378px;
+        margin-top: 6rem;
+    }
+    &__link {
+        margin-top: 6rem;
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    } 
+    &__cover {
+        flex-basis: 763px;
+        height: 763px;
+        border: 1px solid rgba($green, 0.4);
+        border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    } 
+    &__line {
+        width: 658px;
+        height: 658px;
+        border: 1px solid rgba($green, 0.4);
+        border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__image {
+        width: 92%;
+    &__btn {
+        border: none;
+        padding: 0;
+        position: absolute;
+        color: $green;
+        text-align: left;
+        &::before {
+            content: '';
+            background-color: $green;
+            width: 11px;
+            height: 11px;
+            box-shadow: 0 0 0 4px $white, 0 0 0 5px $green;
+            border-radius: 100%;
+            position: absolute;
+        }
+        &_1 {
+            top: 100px;
+            left: 113px;
+            &::before {
+            top: 100px;
+            left: 113px;
+            }
+        }
+        &_2 {
+            top: 200px;
+            right: 200px;
+            &::before {
+                top: 200px;
+                right: 200px;
+                }
+        }
+        &_3 {
+            bottom: 50px;
+            right: 200px;
+            &::before {
+                bottom: 50px;
+                right: 200px;
+                }
+        }
+     }
+     &__food {
+        display: block;
+        color: rgba($green, 0.8);
+     }
+    &__tomato {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 11rem;     
+    }
+}
+
+.title {
+    font-family: $font-cormorant;
+    font-weight: 700;
+    font-size: 8rem;
+    margin: 0;
+    &__span {
+        font-style: italic;
+    }
+    &_block {
+        .title__span {
+            display: block;
+        }
+    }
+}
+
+.description {
+    margin: 0;
+    &_size-s {
+        font-size: 1.8 rem;
+    }
+}
+
+.link {
+    color: $white;
+    text-transform: uppercase;
+    padding: 2.5rem 4.2rem;
+    text-decoration: none;
+    background-color: $orange;
+    box-shadow: 0px 1rem 1.1rem .2rem rgba(207, 92, 13, 0.2);
+    border-radius: 3.8rem;
+    display: inline-block;
+}
