@@ -33,9 +33,14 @@
           </ul>
         </nav>
         <a href="tel:+79453425555" class="header__tel">+7 945 342 55 55</a>
-        <button href="#" class="header__cart">
-          <span class="header__counter">0</span>
-        </button>
+        <div class="header__buttons">
+          <a href="tel:+79453425555" class="header__phone"></a>
+          <button href="#" class="header__menu">
+          </button>
+          <button href="#" class="header__cart">
+            <span class="header__counter">0</span>
+          </button>
+        </div>
       </header>
       <div class="container">
         <div class="main__flex">
@@ -50,6 +55,7 @@
                 основано на&nbsp;принципах и стандартах органически чистых
                 продуктов
               </p>
+              <img class="main__imagemobi" src="images/plate.png" alt=""/>
               <div class="main__link">
                 <a href="#" class="link">Перейти в каталог</a>
               </div>
@@ -57,7 +63,7 @@
           </div>
           <div class="main__cover">
             <div class="main__line">
-              <img class="main__image" src="images/plate.png" alt="" />
+              <img class="main__image" src="images/plate.png" alt=""/>
             </div>
             <button class="main__btn main__btn_1" type="button">
               <span class="main__food">Авокадо</span> 134 руб
@@ -242,7 +248,7 @@
                     <input class="counter__input" type="text" value="0" />
                     <button class="counter__btn counter__plus"></button>
                   </div>
-                  <a href="#" class="link">В корзину</a>
+                  <a href="#" class="link">В&nbsp;корзину</a>
                 </div>
               </div>
             </div>
@@ -592,7 +598,7 @@
             <div class="contact-box__form">
               <div class="card">
                 <h3 class="card__title">Свяжитесь с нами</h3>
-                <form>
+                <form class="card__form">
                   <label class="card__label">Ваше имя</label>
                   <input class="card__input" type="text" placeholder="Ваше имя" />
                   <label class="card__label">Ваш телефон</label>
@@ -619,7 +625,7 @@
           <div class="footer__box">
             <a href="#" class="logo logo_footer"></a>
             <div class="footer__info">
-            <ul class="footer__list">
+            <ul class="footer__list footer__menu">
               <li class="footer__item">
                 <a href="" class="footer__link">Наша продукция</a>
               </li>
@@ -630,7 +636,7 @@
                 <a href="" class="footer__link">Доставка</a>
               </li>
             </ul>
-            <ul class="footer__list">
+            <ul class="footer__list footer__address">
               <li class="footer__item">
                 Москва , ул.&nbsp;Ленинградская&nbsp;64
               </li>
@@ -663,11 +669,11 @@
           </div>
           </div>
           <div class="footer__text">
-            <p>
+            <p class="footer__copy">
               &copy; 2020, Все права защищены
             </p>
-            <p>
-              Сделано в рамках курса учебной платформы <a href="#" class="footer__author">FrontendBlok</a>
+            <p class="footer__copy">
+              Сделано в рамках курса учебной платформы <a href="#" class="footer__author">AnnBlok</a>
             </p>
           </div>
         </div>
