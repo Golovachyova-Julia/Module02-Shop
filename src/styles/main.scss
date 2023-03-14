@@ -199,7 +199,7 @@ body {
     }
     @media (max-width: $r_tab_900) {
       width: 15rem;
-      flex-basis: 10rem;
+      flex-basis: 8rem;
     }
   }
 }
@@ -410,8 +410,12 @@ body {
     right: 122px;
     width: 11rem;
     z-index: -1;
+    @media (max-width: $r_desk_1350) {
+      bottom: 85px;
+      width: 9rem;
+    }
     @media (max-width: $r_tab) {
-      bottom: 348px;
+      bottom: 225px;
       right: 0;
       width: 5.5rem;
     }
@@ -426,6 +430,10 @@ body {
       width: 9.8rem;
       top: 120px;
       right: -50px;
+    @media (max-width: $r_tab) {
+      width: 7.8rem;
+      top: 90px;
+    }  
     }
   }
   &__cucumber {
@@ -451,8 +459,11 @@ body {
     left: 0;
     width: 10.5rem;
     z-index: -1;
+    @media (max-width: $r_desk_1350) {
+      width: 8.5rem;
+    }
     @media (max-width: $r_tab) {
-      bottom: 380px;
+      bottom: 525px;
       width: 5rem;
     }
   }
@@ -589,6 +600,9 @@ body {
         .swiper-slide__hover {
           height: 233px;
           opacity: 1;
+          @media (max-width: $r_desk_hd) {  
+            margin: 0 auto;
+            }
         }
         &::after {
           content: "";
@@ -676,6 +690,9 @@ body {
       letter-spacing: 0.1rem;
       opacity: 0.8;
       transition: 0.3s;
+      @media (max-width: $r_desk) {  
+        justify-content: center;
+        }
       &:hover {
         opacity: 1;
       }
@@ -1015,6 +1032,13 @@ body {
     box-sizing: border-box;
     padding: 2.7rem 3rem 3.8rem;
     transition: 0.3s;
+    @media (max-width: $r_desk_1120) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      padding: 2.7rem 1rem 2.8rem;
+    }
     &:hover {
       box-shadow: 0 0 0 2px rgba($green, 0.4) inset;
     }
@@ -1082,6 +1106,8 @@ body {
     @media (max-width: $r_tab) {
       margin-left: 0;
       margin-top: 3rem;
+      flex-direction: column;
+      text-align: center;
     }
   }
   &__text {
@@ -1118,6 +1144,9 @@ body {
     gap: 3rem;
     padding-left: 0;
     margin-top: 4.3rem;
+    @media (max-width: $r_tab) {
+      justify-content: center;
+    }
   }
   &__item {
     height: 32px;
