@@ -652,7 +652,7 @@ body {
   @media (max-width: $r_tab) {
     padding-bottom: 4rem;
   }
-  @media (max-width: $r_mob_500) {
+  @media (max-width: $r_mob_400) {
     padding-bottom: 0.8rem;
   }
   &__text {
@@ -1010,7 +1010,7 @@ body {
   @media (max-width: $r_tab) {
     padding-bottom: 6rem;
   }
-  @media (max-width: $r_mob_500) {
+  @media (max-width: $r_mob_400) {
     padding-bottom: 3rem;
     padding-top: 4.2rem;
   }
@@ -1132,7 +1132,7 @@ body {
   }
   &__text {
     margin-top: 4rem;
-    @media (max-width: $r_mob_500) {
+    @media (max-width: $r_mob_400) {
       max-width: 215px;
       margin: 2.5rem auto 0;
     }
@@ -1146,7 +1146,7 @@ body {
     padding-top: 0;
     padding-bottom: 8rem;
   }
-  @media (max-width: $r_mob_500) {
+  @media (max-width: $r_mob_400) {
     padding-bottom: 1.2rem;
   }
   &__list {
@@ -1362,9 +1362,6 @@ body {
     min-height: 61px;
     max-width: 300px;
     line-height: 1.5;
-    @media (max-width: $r_tab) {
-      min-height: 70px;
-    }
     @media (max-width: $r_mob_360) {
       font-size: 1.25rem;
       margin-top: 0.8rem;
@@ -1506,9 +1503,11 @@ body {
 .contact {
   padding-top: 10rem;
   padding-bottom: 16rem;
-  @media (max-width: $r_tab) {
-    padding-top: 4rem;
+  @media (max-width: $r_tab) { 
     padding-bottom: 7.6rem;
+  }
+  @media (max-width: $r_mob_400) {
+    padding-top: 4rem;
   }
   @media (max-width: $r_mob_360) {
     padding-top: 2.3rem;
@@ -1630,6 +1629,9 @@ body {
       flex-basis: 589px;
       @media (max-width: $r_desk_1350) {
         flex-basis: 489px;
+      }
+      @media (max-width: $r_tab) {
+        flex-basis: 389px;
       }
       @media (max-width: $r_mob_360) {
         flex-basis: 289px;
