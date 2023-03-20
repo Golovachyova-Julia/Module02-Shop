@@ -69,3 +69,11 @@ var swiper = new Swiper(".trendsSwiper", {
   }
 });
 
+var swiper = new Swiper(".catalogSwiper", {
+  slidesPerView: 2.5,
+  spaceBetween: 10,
+  slidesPerGroup: 3,
+  loop: true,
+  loopFillGroupWithBlank: true,
+});
+
