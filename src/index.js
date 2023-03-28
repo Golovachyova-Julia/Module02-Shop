@@ -76,4 +76,3 @@ var swiper = new Swiper(".catalogSwiper", {
   loop: true,
   loopFillGroupWithBlank: true,
 });
-
